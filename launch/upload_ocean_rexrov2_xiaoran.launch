@@ -74,7 +74,7 @@
 ?>
 
 
-  <include file="$(find gazebo_description)/launch/spawn_objectUnderwater.launch"/>  
+  <include file="$(find rov_smc)/launch/spawn_objectUnderwater.launch"/>  
 
 
 
@@ -128,8 +128,8 @@
   </include>
 ?>
 
-  <include file="$(find rov_smc)/launch/boxHydrodynamics.launch"/>  
-  <include file="$(find rov_smc)/launch/boxSpeedPublisher.launch"/>  
+<!--  <include file="$(find rov_smc)/launch/boxHydrodynamics.launch"/>  -->
+<!--  <include file="$(find rov_smc)/launch/boxSpeedPublisher.launch"/>  -->
 
 
 <!-- Disturbancess -->
@@ -171,7 +171,7 @@
 
 
   <!-- load other controllers -->
-  <node name="ros_control_controller_manager" pkg="controller_manager" type="controller_manager" respawn="false" output="screen" args="load joint_group_position_controller" />
+<!--  <node name="ros_control_controller_manager" pkg="controller_manager" type="controller_manager" respawn="false" output="screen" args="load joint_group_position_controller" />-->
 
 <?ignore <node name="rviz" pkg="rviz" type="rviz" output="screen" args="-d $(find uuv_gazebo)/rviz/controller_demo.rviz"/>
 ?>
