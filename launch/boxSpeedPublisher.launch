@@ -1,0 +1,5 @@
+<launch>
+    <!-- My Package launch file -->
+    <node pkg="gazebo_description" type="simpleBoxPublisher.py" name="velocity_publisher_node"  output="screen">
+    </node>
+</launch>

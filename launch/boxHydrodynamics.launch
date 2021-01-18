@@ -1,0 +1,5 @@
+<launch>
+    <!-- My Package launch file -->
+    <node pkg="gazebo_description" type="currentVelocityHydrodynamics" name="robot_mover_mark_two"  output="screen">
+    </node>
+</launch>
